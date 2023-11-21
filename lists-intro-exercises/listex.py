@@ -26,5 +26,27 @@ guests.append('GuestZ')
 
 for i in guests:
     print(i+", You are invited to dinner")
-
     
+print("table lost -2 spots left")
+
+print(guests[0:2])
+
+guests.pop()
+print(guests)
+guests.pop()
+print(guests)
+
+print(len(guests))
+x = len(guests)
+for i in guests:
+    if x > 2:
+        guests.pop()
+        x-=1
+    else:
+        break
+print(guests)
+for i in guests:
+    print(f"you're invited {i}")
+del guests[0:2]
+print(guests)
+        
