@@ -13,3 +13,4 @@ print(f"\nHere is the original list again: {cars_one}")
 
 cars_one.reverse()
 print(cars_one)
+print(len(cars_one))
