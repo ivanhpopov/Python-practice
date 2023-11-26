@@ -1,7 +1,12 @@
 pizzas = ['margherita', 'barbequelogia', 'burgerza']
+friend_pizzas=pizzas[:]
+pizzas.append('wolfza')
+friend_pizzas.append('Quatro')
+
+print("My favorite pizzas are:")
 for pizza in pizzas:
-    print(f"I like {pizza}!\n")
-print("""I really love pizza!
-Second line test.
-Third line test.""")
-    
+    print(pizza.title())
+
+print("My friend's favorite pizzas are:")
+for pizza in friend_pizzas:
+    print(pizza.title())
