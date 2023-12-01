@@ -10,3 +10,6 @@ print(favorite_numbers)
 glossary = {'list': 'list of items', 'integer': 'number', 'conditional': 'statement to execute by condition', 'loop': 'An action which stops when a condition is met or runs through everything.'}
 for gloss in glossary:
     print(f"{gloss}\n\t{glossary[gloss]}")
+print("\n")
+for key in glossary.keys():
+    print(key)
