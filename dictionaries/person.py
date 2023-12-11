@@ -1,7 +1,17 @@
-person_info = {'first_name': 'John', 'last_name': 'Black', 'age': 26, 'city': 'Boston'}
+person1_info = {'first_name': 'John', 'last_name': 'Black', 'age': 26, 'city': 'Boston'}
+person2_info = {'first_name': 'Will', 'last_name': 'Smith', 'age': 24, 'city': 'City1'}
+person3_info = {'first_name': 'Kenny', 'last_name': 'Roberts', 'age': 23, 'city': 'City2'}
 
-for key in person_info:
-    print(key, person_info[key])
+people = [person1_info, person2_info, person3_info]
+for person in people:
+    for key, value in person.items():
+        print(key, value)
+    print('------------')
+    
+
+
+#for key in person_info:
+#    print(key, person_info[key])
 
 favorite_numbers = {'james': 1, 'sarah': 2, 'Jorge': 3, 'nick': 4, 'roy': 5}
 favorite_numbers['james'] = input("Provide a number for james")
