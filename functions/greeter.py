@@ -1,15 +1,21 @@
-def greet_user(username):
-    """Display a simple greeting."""
-    print(f"Hello, {username.title()}!")
+def get_formatted_name(first_name, last_name, middle_name =''):
+    """Return a full name, neatly formatted."""
     
-greet_user('jesse')
+    full_name = f"{first_name} {middle_name} {last_name}"
+    return full_name.title()
 
-def display_message(name, language, chapter):
-    print(f"Hello, I'm {name.title()} and I'm learning {language.title()}. So far I've reached {chapter.title()}, it's really fun!")
+# This is an infinite loop!
+while True:
+    print("\nPlease tell me your name:")
+    print("(Enter 'q' at any time to quit)")
     
-display_message('Ivan', 'Python', 'Functions')
-
-def favorite_book(title):
-    print(f"My favorite book is {title.title()}!")
+    f_name = input("First name: ")
+    if f_name == 'q':
+        break
     
-favorite_book('Pirates of the Carribean')
+    l_name = input("Last name: ")
+    if f_name == 'q':
+        break
+    
+    formatted_name = get_formatted_name(f_name, l_name)
+    print(f"\nHello, {formatted_name}!")
