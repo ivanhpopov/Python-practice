@@ -23,12 +23,22 @@ class Restaurant:
     def increment_number_served(self, increment):
         self.number_served += increment
     
+class IceCreamStand(Restaurant):
+    def __init__(self, name, type):
+        super().__init__(name, type)
+    def get_flavours(self):
+        flavours_list =[]
+        x=0
+        while x != 'stop':
+            x = input("Please provide a few flavours, enter \"stop\" to stop:")
+            x=str(x)
+            if x !='stop':
+                flavours_list.append(x)
+            else:
+                break
+       
+        print(f"{flavours_list} flavours are available")
         
-cactus = Restaurant("Cactus", 'Bulgarian')
-cactus.describe_restaurant()
-cactus.open_restaurant()
-cactus.read_served()
-cactus.set_number_served(4)
-cactus.read_served()
-cactus.increment_number_served(5)
-cactus.read_served()
+cactus = IceCreamStand('Cactus', 'Spanish')
+cactus.get_flavours()
+        
