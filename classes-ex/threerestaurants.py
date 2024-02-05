@@ -14,7 +14,7 @@ class Restaurant:
         print(f"\n{self.name} is open!")
         
         
-cactus = Restaurant("Cactus", 'Bulgarian')
+"""cactus = Restaurant("Cactus", 'Bulgarian')
 mactus = Restaurant("Mactus", "Bengalian")
 tactus = Restaurant("Tactus", "Spanish")
 
@@ -22,4 +22,4 @@ cactus.describe_restaurant()
 print("--------------")
 mactus.describe_restaurant()
 print("--------------")
-tactus.describe_restaurant()
+tactus.describe_restaurant()"""
