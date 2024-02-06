@@ -8,8 +8,7 @@ new_contents = contents.replace('Python', 'C')
 
 list=[]
 
-lines = new_contents.splitlines()
-for line in lines:
+for line in new_contents.splitlines():
     list.append(line)
 
 for item in list:
