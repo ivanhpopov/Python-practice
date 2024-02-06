@@ -1,0 +1,4 @@
+In Python you can read files.
+In Python you can automate boring tasks.
+In Python you can create OOP Applications.
+
